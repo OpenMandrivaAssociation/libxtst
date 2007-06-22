@@ -1,8 +1,8 @@
 %define libxtst %mklibname xtst 6
 Name: libxtst
 Summary:  The Xtst Library
-Version: 1.0.1
-Release: %mkrel 3
+Version: 1.0.2
+Release: %mkrel 1
 Group: Development/X11
 License: MIT
 URL: http://xorg.freedesktop.org
@@ -48,6 +48,8 @@ Development files for %{name}
 %{_libdir}/libXtst.so
 %{_libdir}/libXtst.la
 %{_libdir}/pkgconfig/xtst.pc
+%{_mandir}/man3/XTest*
+
 
 #-----------------------------------------------------------
 
@@ -91,5 +93,4 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %{_libdir}/libXtst.so.6
 %{_libdir}/libXtst.so.6.1.0
-
 
