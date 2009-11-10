@@ -14,6 +14,7 @@ BuildRequires: libxext-devel >= 1.0.0
 BuildRequires: libxi-devel >= 1.3
 BuildRequires: x11-proto-devel >= 7.5
 BuildRequires: x11-util-macros >= 1.0.1
+BuildRequires: xmlto
 
 %description
 The Xtst Library
