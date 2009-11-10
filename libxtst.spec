@@ -1,8 +1,8 @@
 %define libxtst %mklibname xtst 6
 Name: libxtst
 Summary:  The Xtst Library
-Version: 1.0.3
-Release: %mkrel 4
+Version: 1.1.0
+Release: %mkrel 1
 Group: Development/X11
 License: MIT
 URL: http://xorg.freedesktop.org
@@ -11,7 +11,8 @@ BuildRoot: %{_tmppath}/%{name}-root
 
 BuildRequires: libx11-devel >= 1.0.0
 BuildRequires: libxext-devel >= 1.0.0
-BuildRequires: x11-proto-devel >= 1.0.0
+BuildRequires: libxi-devel >= 1.3
+BuildRequires: x11-proto-devel >= 7.5
 BuildRequires: x11-util-macros >= 1.0.1
 
 %description
@@ -35,10 +36,11 @@ Summary: Development files for %{name}
 Group: Development/X11
 
 Requires: %{libxtst} >= %{version}
-Requires: x11-proto-devel >= 1.0.0
+Requires: x11-proto-devel >= 7.5
 Provides: libxtst-devel = %{version}-%{release}
 
 Conflicts: libxorg-x11-devel < 7.0
+Conflicts: x11-proto-devel < 7.5
 
 %description -n %{libxtst}-devel
 Development files for %{name}
@@ -48,6 +50,7 @@ Development files for %{name}
 %{_libdir}/libXtst.so
 %{_libdir}/libXtst.la
 %{_libdir}/pkgconfig/xtst.pc
+%{_includedir}/X11/extensions/*.h
 %{_mandir}/man3/XTest*
 
 #-----------------------------------------------------------
