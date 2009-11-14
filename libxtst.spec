@@ -2,7 +2,7 @@
 Name: libxtst
 Summary:  The Xtst Library
 Version: 1.1.0
-Release: %mkrel 1
+Release: %mkrel 2
 Group: Development/X11
 License: MIT
 URL: http://xorg.freedesktop.org
@@ -38,6 +38,7 @@ Group: Development/X11
 
 Requires: %{libxtst} >= %{version}
 Requires: x11-proto-devel >= 7.5
+Requires: libxi-devel >= 1.3
 Provides: libxtst-devel = %{version}-%{release}
 
 Conflicts: libxorg-x11-devel < 7.0
