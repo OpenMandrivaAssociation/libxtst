@@ -14,7 +14,7 @@ BuildRequires: libxext-devel >= 1.0.0
 BuildRequires: libxi-devel >= 1.3
 BuildRequires: x11-proto-devel >= 7.5
 BuildRequires: x11-util-macros >= 1.0.1
-BuildRequires: xmlto
+BuildRequires: xmlto docbook-dtd412-xml
 
 %description
 The Xtst Library
@@ -54,6 +54,7 @@ Development files for %{name}
 %{_libdir}/pkgconfig/xtst.pc
 %{_includedir}/X11/extensions/*.h
 %{_mandir}/man3/XTest*
+%{_datadir}/doc/libXtst
 
 #-----------------------------------------------------------
 
