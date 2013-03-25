@@ -48,6 +48,7 @@ Development files for %{name}
 %setup -qn libXtst-%{version}
 
 %build
+autoreconf -fi
 %configure2_5x \
 	--disable-static \
 	--x-includes=%{_includedir}\
@@ -56,7 +57,6 @@ Development files for %{name}
 %make
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
 %files -n %{libname}
