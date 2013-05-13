@@ -62,7 +62,7 @@ autoreconf -fi
 %files -n %{libname}
 %{_libdir}/libXtst.so.%{major}*
 
-%files -n %{develname}
+%files -n %{devname}
 %{_libdir}/libXtst.so
 %{_libdir}/pkgconfig/xtst.pc
 %{_includedir}/X11/extensions/*.h
