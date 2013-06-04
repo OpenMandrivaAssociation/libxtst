@@ -4,8 +4,8 @@
 
 Summary:	The Xtst Library
 Name:		libxtst
-Version:	1.2.1
-Release:	3
+Version:	1.2.2
+Release:	1
 Group:		Development/X11
 License:	MIT
 URL:		http://xorg.freedesktop.org
@@ -20,7 +20,7 @@ BuildRequires:	xmlto
 BuildRequires:	docbook-dtd412-xml
 
 %description
-The Xtst Library
+The Xtst Library.
 
 %package -n %{libname}
 Summary:	The Xtst Library
@@ -48,7 +48,6 @@ Development files for %{name}.
 %setup -qn libXtst-%{version}
 
 %build
-autoreconf -fi
 %configure2_5x \
 	--disable-static \
 	--x-includes=%{_includedir}\
