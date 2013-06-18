@@ -5,10 +5,10 @@
 Summary:	The Xtst Library
 Name:		libxtst
 Version:	1.2.2
-Release:	1
-Group:		Development/X11
+Release:	2
 License:	MIT
-URL:		http://xorg.freedesktop.org
+Group:		Development/X11
+Url:		http://xorg.freedesktop.org
 Source0:	http://xorg.freedesktop.org/releases/individual/lib/libXtst-%{version}.tar.bz2
 
 BuildRequires:	pkgconfig(x11)
@@ -25,7 +25,6 @@ The Xtst Library.
 %package -n %{libname}
 Summary:	The Xtst Library
 Group:		Development/X11
-Conflicts:	libxorg-x11 < 7.0
 
 %description -n %{libname}
 The Xtst Library.
@@ -38,8 +37,6 @@ Requires:	pkgconfig(xi)
 Provides:	libxtst-devel = %{version}-%{release}
 Obsoletes:	%{_lib}xtst6-devel < 1.2.1
 Obsoletes:	%{_lib}xtst-static-devel < 1.2.1
-Conflicts:	libxorg-x11-devel < 7.0
-Conflicts:	x11-proto-devel < 7.5
 
 %description -n %{devname}
 Development files for %{name}.
