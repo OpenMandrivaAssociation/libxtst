@@ -14,6 +14,7 @@ Source0:	http://xorg.freedesktop.org/releases/individual/lib/libXtst-%{version}.
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xext)
 BuildRequires:	pkgconfig(xi)
+BuildRequires:	pkgconfig(xfixes)
 BuildRequires:	x11-proto-devel >= 7.5
 BuildRequires:	x11-util-macros >= 1.0.1
 BuildRequires:	xmlto
