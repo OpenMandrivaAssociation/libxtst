@@ -4,8 +4,8 @@
 
 Summary:	The Xtst Library
 Name:		libxtst
-Version:	1.2.2
-Release:	12
+Version:	1.2.3
+Release:	1
 License:	MIT
 Group:		Development/X11
 Url:		http://xorg.freedesktop.org
@@ -46,7 +46,7 @@ Development files for %{name}.
 %setup -qn libXtst-%{version}
 
 %build
-%configure2_5x \
+%configure \
 	--disable-static \
 	--x-includes=%{_includedir}\
 	--x-libraries=%{_libdir}
