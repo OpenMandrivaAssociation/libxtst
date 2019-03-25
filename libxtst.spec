@@ -43,7 +43,7 @@ Obsoletes:	%{_lib}xtst-static-devel < 1.2.1
 Development files for %{name}.
 
 %prep
-%setup -qn libXtst-%{version}
+%autosetup -n libXtst-%{version} -p1
 
 %build
 %configure \
@@ -51,10 +51,10 @@ Development files for %{name}.
 	--x-includes=%{_includedir}\
 	--x-libraries=%{_libdir}
 
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files -n %{libname}
 %{_libdir}/libXtst.so.%{major}*
@@ -65,4 +65,3 @@ Development files for %{name}.
 %{_includedir}/X11/extensions/*.h
 %{_mandir}/man3/XTest*
 %{_datadir}/doc/libXtst
-
