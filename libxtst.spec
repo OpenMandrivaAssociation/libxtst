@@ -31,6 +31,9 @@ BuildRequires:	devel(libX11)
 BuildRequires:	devel(libXext)
 BuildRequires:	devel(libXi)
 BuildRequires:	devel(libXfixes)
+BuildRequires:	devel(libxcb)
+BuildRequires:	devel(libXau)
+BuildRequires:	devel(libXdmcp)
 %endif
 
 %description
