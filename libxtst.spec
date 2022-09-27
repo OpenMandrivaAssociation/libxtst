@@ -11,12 +11,12 @@
 
 Summary:	The Xtst Library
 Name:		libxtst
-Version:	1.2.3
-Release:	5
+Version:	1.2.4
+Release:	1
 License:	MIT
 Group:		Development/X11
 Url:		http://xorg.freedesktop.org
-Source0:	http://xorg.freedesktop.org/releases/individual/lib/libXtst-%{version}.tar.bz2
+Source0:	http://xorg.freedesktop.org/releases/individual/lib/libXtst-%{version}.tar.xz
 
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xext)
@@ -109,8 +109,8 @@ cd build
 %{_libdir}/libXtst.so
 %{_libdir}/pkgconfig/xtst.pc
 %{_includedir}/X11/extensions/*.h
-%{_mandir}/man3/XTest*
-%{_datadir}/doc/libXtst
+%doc %{_mandir}/man3/XTest*
+%doc %{_datadir}/doc/libXtst
 
 %if %{with compat32}
 %files -n %{lib32name}
