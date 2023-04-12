@@ -27,6 +27,7 @@ BuildRequires:	x11-util-macros >= 1.0.1
 BuildRequires:	xmlto
 BuildRequires:	docbook-dtd412-xml
 %if %{with compat32}
+BuildRequires:	libc6
 BuildRequires:	devel(libX11)
 BuildRequires:	devel(libXext)
 BuildRequires:	devel(libXi)
